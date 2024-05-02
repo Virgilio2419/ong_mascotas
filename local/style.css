@@ -86,15 +86,15 @@ h1{
 
 .contenedor { /*contenedor flexible sus elementos hijos
 se pueden organizar de manera flexible en función del espacio disponible*/
-padding-top: 50px;
-padding-left: 80px; /*Espacio hacia abajo*/
-padding-right: 100px;
+padding-top: 50px; /*Espacio hacia abajo*/
+padding-left: 100px; /*Espacio hacia abajo*/
+padding-right: 100px; /*Espacio hacia abajo*/
 display: flex; /*el espacio entre los elementos*/
 align-items: center; /* Alinea verticalmente */
 }
 .img {
 float: left; /* Para alinear la imagen a la izquierda */
-margin-left: 50px; /* Establece un margen a la derecha de la imagen */
+margin-left: 70px; /* Establece un margen a la derecha de la imagen */
 }
 .adoptar {
 margin-left: 15%;
