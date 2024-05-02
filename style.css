@@ -1,0 +1,146 @@
+
+td a {
+    text-decoration: none; /* Quita las líneas subrayadas */
+    color: black;
+}
+
+td:hover a {
+    color: lightseagreen; /* Cambia el color del texto al pasar el cursor */
+}
+
+td {
+    padding-left: 25px; /* Relleno horizontal */
+    padding-right: 25px; /* Relleno horizontal */
+}
+
+h1 {
+    padding-top: 25px;
+    padding-bottom: 25px; /* Relleno horizontal */
+}
+
+p {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-style: italic;
+}
+#p1{
+
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    margin-left: 50px;
+
+
+}
+
+.container {
+    width: 100%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+form {
+    text-align: center; /* Centrar contenido del formulario */
+}
+
+form div {
+    margin-bottom: 10px; /* Espaciado entre elementos del formulario */
+}
+
+
+title {
+    margin: 0,auto;
+}
+
+td a {
+    text-decoration: none; /* Quita las líneas subrayadas */
+    color: black;
+  }
+        /* Estilo cuando el cursor está sobre una fila de la tabla */
+td:hover a {
+  color: lightseagreen; /* Cambia el color de fondo */
+}
+
+td {
+  padding-left: 25px; /* Relleno horizontal */
+  padding-right: 25px; /* Relleno horizontal */
+}
+
+td a {
+    text-decoration: none; /* Quita las líneas subrayadas */
+    color: black;
+  }
+        /* Estilo cuando el cursor está sobre una fila de la tabla */
+/*td:hover a {
+  color: lightseagreen; /* Cambia el color de fondo */
+
+td {
+  padding-left: 25px; /* Relleno horizontal */
+  padding-right: 25px; /* Relleno horizontal */
+}
+
+h1{
+  padding-top: 50px;
+  padding-bottom: 50px; /* Relleno horizontal */
+}
+
+.contenedor { /*contenedor flexible sus elementos hijos
+se pueden organizar de manera flexible en función del espacio disponible*/
+padding-top: 50px;
+padding-left: 80px; /*Espacio hacia abajo*/
+padding-right: 100px;
+display: flex; /*el espacio entre los elementos*/
+align-items: center; /* Alinea verticalmente */
+}
+.img {
+float: left; /* Para alinear la imagen a la izquierda */
+margin-left: 50px; /* Establece un margen a la derecha de la imagen */
+}
+.adoptar {
+margin-left: 15%;
+float: right; /* Para alinear el enlace a la derecha */
+text-decoration: none; /* Para quitar la subrayado predeterminado */
+color: black; /* Color del texto del enlace */
+}
+.adoptar:hover {
+color: lightseagreen; /* Cambia el color del texto del enlace cuando se pasa el ratón sobre él */
+}
+
+
+/*<button class="boton-secundario">Botón Secundario</button>
+<button class="boton-terciario">Botón Terciario</button> */
+
+.boton-primario{
+margin-left: 50px;
+float: right; /* Para alinear el enlace a la derecha */
+text-decoration: none; /* Para quitar la subrayado predeterminado */
+color: black; /* Color del texto del enlace */
+}
+.boton-secundario{
+    float: right; /* Para alinear el enlace a la derecha */
+    text-decoration: none; /* Para quitar la subrayado predeterminado */
+    color: black; /* Color del texto del enlace */
+}
+
+
+.video {
+    display: flex; /* Utiliza Flexbox para organizar los elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top: 50px; /* Espacio arriba del video */
+    margin-bottom: 50px; /* Espacio entre el video y el texto */
+  }
+
+  .language-link {
+    float: right;
+    color: black; /* Cambiar color del enlace */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.language-link:hover {
+    color: lightseagreen; /* Cambiar color al pasar el mouse */
+}
+
+td:hover img {
+  color: lightseagreen; /* Cambiar color al pasar el mouse */
+}
