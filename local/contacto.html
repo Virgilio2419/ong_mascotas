@@ -92,131 +92,24 @@
             </form>
         </div>
     </nav>
-		
-		  <div style="margin-top: 15px;"></div>
+	
+<h2 style="text-align: center;">Formulario de Contacto</h2>
 
-		  <div class="container">
-			<h2 class="text-center mt-4">Formulario de Registro</h2>
-			<form action="#" method="GET" id="registraForm" data-parsley-validate>
-				<div style="margin-top: 15px;"></div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="nombre usuario">Nombre de usuario</label>
-							<input type="text" placeholder="Usuario_55" id="nombre usuario" name="nombre usuario" class="form-control" data-parsley-length="[8, 25]" required>
-							<span id="msgerror" style="color: red;"></span>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="rut">Rut</label>
-							<input type="text" placeholder="123456789-0" id="rut" name="rut" class="form-control" data-parsley-pattern="^[0-9]{7,10}-[0-9kK]$" required>
-							<span id="msgerror" style="color: red;"></span>
-						</div>
-					</div>
-				</div>
-		
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="nombres">Nombres</label>
-							<input type="text" placeholder="nombre nombre" id="nombres" name="nombres" class="form-control" data-parsley-length="[2, 50]" data-parsley-pattern="/^[a-zA-Z\s]*$/" required>
-							<span id="msgerror" style="color: red;"></span>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="apellidos">Apellidos</label>
-							<input type="text" placeholder="paterno materno" id="apellidos" name="apellidos" class="form-control" data-parsley-length="[2, 50]" data-parsley-pattern="/^[a-zA-Z\s]*$/" required>
-							<span id="msgerror" style="color: red;"></span>
-						</div>
-					</div>
-				</div>
-		
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="fecha_nacimiento">Fecha de nacimiento:</label>
-							<input type="date" placeholder="dd/mm/yyyy" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control" maxlength="10" data-parsley-minage="18" required>
-							<span id="error_fecha" style="color: red;"></span>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="correo">Correo</label>
-							<input type="text" placeholder="usuario@gmail.com" id="correo" name="correo" class="form-control" data-parsley-length="[5, 20]" data-parsley-type="email" required>
-							<span id="msgerror" style="color: red;"></span>
-						</div>
-					</div>
-				</div>
-		
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="contraseña">Contraseña</label>
-							<input type="password" placeholder="debe contener al menos una mayuscula" id="contraseña" name="contraseña" class="form-control" data-parsley-length="[8, 15]" data-parsley-pattern="/^[a-zA-Z\s]*$/" required>
-							<span id="msgerror" style="color: red;"></span>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label for="genero">Género</label>
-					<select id="genero" name="genero" class="form-control" required>
-						<option value="">Seleccione un género</option>
-						<option value="Masculino">Masculino</option>
-						<option value="Femenino">Femenino</option>
-						<option value="Otro">Otro</option>
-					</select>
-						</div>
-					</div>
-				</div>
-		
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group">
-						<label for="direccion">Dirección</label>
-						<input type="text" placeholder="calle, numeracion , comuna" id="direccion" name="direccion" class="form-control" data-parsley-length="[5, 50]" required>
-						<span id="msgerror" style="color: red;"></span>
-						</div>
-					</div>
-		
-					<div class="col-md-6">
-						<div class="form-group">
-						<label for="telefono">Teléfono</label>
-						<div class="input-group">
-						<div class="input-group-prepend">
-							<select class="custom-select" id="codigo_pais" name="codigo_pais">
-								<option value="+1">Estados Unidos (+1)</option>
-								<option value="+52">México (+52)</option>
-								<option value="+1">Canadá (+1)</option>
-								<option value="+54">Argentina (+54)</option>
-								<option value="+55">Brasil (+55)</option>
-								<option value="+56">Chile (+56)</option>
-								<option value="+57">Colombia (+57)</option>
-								<option value="+593">Ecuador (+593)</option>
-								<option value="+502">Guatemala (+502)</option>
-								<option value="+504">Honduras (+504)</option>
-								<option value="+52">México (+52)</option>
-								<option value="+507">Panamá (+507)</option>
-								<option value="+595">Paraguay (+595)</option>
-								<option value="+51">Perú (+51)</option>
-								<option value="+598">Uruguay (+598)</option>
-								<option value="+58">Venezuela (+58)</option>
-							</select>
-						</div>
-						<input type="text" placeholder="123456789" id="telefono" name="telefono" class="form-control" data-parsley-length="[7, 11]" data-parsley-pattern="^[0-9]+$" required>
-					<span id="msgerror" style="color: red;"></span>
-						</div>	
-						</div>
-					</div>
-				</div>
-				
-				<div class="text-center" style="margin-top: 15px;">
-					<form>
-						<button type="submit" class="btn btn-primary btn-block">Enviar</button>
-					</form>
-				</div>	
-		</div>
+<form action="procesar_formulario.php" method="POST" style="text-align: center;">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+	<label for="tefefono">Telefono:</label>
+    <input type="telefono" id="telefono" name="tefefono" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+    
+    <input type="submit" value="Enviar">
+</form>
 
 		       <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
